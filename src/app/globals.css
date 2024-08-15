@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+
+* {
+  scrollbar-color: #99bac7 transparent;
+  scrollbar-width: thin;
+}
+
+html {
+  overflow-x: hidden;
+}

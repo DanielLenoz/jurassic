@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Carter_One, Raleway, Archivo } from 'next/font/google'
-import './globals.css'
 import { Header } from 'app/components/shared/Header'
+import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Jurrasic park',
@@ -45,7 +45,7 @@ export default function RootLayout({
       lang="en"
       className={`${carter_One.variable} ${raleway.variable} ${archivo.variable}`}
     >
-      <body>
+      <body className="bg-primary">
         <Header />
         {children}
       </body>

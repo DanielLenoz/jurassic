@@ -1,0 +1,7 @@
+.p-ripple-disabled .p-sidebar-header {
+    display: none;
+}
+
+.p-sidebar-mask {
+    background-color: rgba(0, 0, 0, 0.4);
+}

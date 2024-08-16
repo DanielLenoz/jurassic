@@ -12,7 +12,7 @@ export const Homepages = ({ newHome }: { newHome: string }) => {
         loop
         className="sm:hidden"
       >
-        <source src={`/videos/${newHome}M.mkv`} type="video/mp4" />
+        <source src={`/videos/${newHome}M.mp4`} type="video/mp4" />
         <track
           src={`/videos/${newHome}.vtt`}
           kind="subtitles"
@@ -30,7 +30,7 @@ export const Homepages = ({ newHome }: { newHome: string }) => {
         loop
         className="hidden sm:block"
       >
-        <source src={`/videos/${newHome}.mkv`} type="video/mp4" />
+        <source src={`/videos/${newHome}.mp4`} type="video/mp4" />
         <track
           src={`/videos/${newHome}.vtt`}
           kind="subtitles"

@@ -11,7 +11,7 @@ export const Routes = ({
   const navLinks = [
     {
       href: '#jurassicPark',
-      text: 'Jurassic Parks',
+      text: 'Jurassic Park',
     },
     {
       href: '#jurassicWork',
@@ -29,7 +29,7 @@ export const Routes = ({
   return (
     <>
       {navLinks.map(({ href, text }) => (
-        <li className="border-b-2 border-transparent text-left font-title text-xl text-white transition ease-in-out hover:border-slate-400">
+        <li className="border-b-2 border-transparent text-left font-title text-xl text-white transition ease-in-out hover:border-slate-400" key={text}>
           <button className=" text-left" onClick={() => changesHome(href)}>{text}</button>
         </li>
       ))}

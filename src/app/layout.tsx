@@ -45,7 +45,7 @@ export default function RootLayout({
       lang="en"
       className={`${carter_One.variable} ${raleway.variable} ${archivo.variable}`}
     >
-      <body className="bg-primary">
+      <body className="bg-primary text-white">
         <Header />
         {children}
       </body>

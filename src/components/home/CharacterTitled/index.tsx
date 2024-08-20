@@ -56,12 +56,13 @@ export const CharacterTitled = () => {
   // useMemo para memorizar el renderizado de los personajes y evitar cálculos innecesarios
   const renderedCharacters = useMemo(() => {
     return characters.map((data) => (
-      <div key={data.id} className="grid gap-2 sm:flex">
+      <>
         <Image
           src={data.img.full}
           width={347}
           height={347}
           alt={data.Name}
+          key={data.id}
           className="rounded-2xl shadow-2xl shadow-segundary"
         />
         <article className="grid max-w-[636px] gap-1">
@@ -70,9 +71,9 @@ export const CharacterTitled = () => {
             <MDXRemote source={data.content} />
           </article>
         </article>
-      </div>
+      </>
     ))
   }, [characters])
 
-  return <section className="grid gap-2 sm:flex">{renderedCharacters}</section>
+  return <section className="grid gap-2 lg:flex">{renderedCharacters}</section>
 }

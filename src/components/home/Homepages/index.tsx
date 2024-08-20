@@ -35,9 +35,9 @@ export const Homepages = () => {
   }
   return (
     <>
-      <section className="relative pb-3">
+      <section className="relative pb-3 shadow">
         <Videos key={home} newHome={home} />
-        <article className="absolute bottom-[10%] left-2 grid justify-items-start gap-2 lg:bottom-1/4 sm:max-w-[50%]">
+        <article className="absolute bottom-[10%] left-2 grid justify-items-start gap-2 sm:max-w-[50%] lg:bottom-1/4">
           <h1 className="font-title text-4xl font-extrabold sm:text-5xl">
             Bienvenidos al nuevo mundo
           </h1>

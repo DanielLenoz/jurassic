@@ -10,3 +10,7 @@
 html {
   overflow-x: hidden;
 }
+
+.shadow{
+  mask-image: linear-gradient(black 80%, transparent)
+}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Carter_One, Raleway, Archivo } from 'next/font/google'
 import { Header } from 'app/components/shared/Header'
 import './globals.css'
+import { Footer } from 'app/components/shared/Footer'
 
 export const metadata: Metadata = {
   title: 'Jurrasic park',
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body className="bg-primary text-white">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

@@ -1,5 +1,5 @@
 import { supabase } from 'app/supabase/client'
-import { InfiniteMovingCards } from 'app/components/aceternityUI/infiniteMovingCard'
+import { InfiniteMovingCards } from 'app/components/shared/CharecterCards/aceternityUI/infiniteMovingCard'
 
 export const CharecterCards = async () => {
   let { data: CharactersFranchise, error } = await supabase

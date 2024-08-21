@@ -2,6 +2,7 @@ import { CharacterTitled } from 'app/components/home/CharacterTitled'
 import { Homepages } from 'app/components/home/Homepages'
 import { MapJurassic } from 'app/components/home/MapJurassic'
 import { CharecterCards } from 'app/components/shared/CharecterCards'
+import { DinoCards } from 'app/components/shared/DinoCards'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <CharacterTitled />
         <CharecterCards />
         <MapJurassic />
+        <DinoCards/>
       </section>
     </main>
   )

@@ -6,7 +6,7 @@ interface Dinosaur {
   }
 }
 
-export default async function dinosaur(props: Dinosaur) {
+export default async function Dinosaur(props: Dinosaur) {
   const { dinosaur } = props.params
 
   let { data: Dinosaurios, error } = await supabase

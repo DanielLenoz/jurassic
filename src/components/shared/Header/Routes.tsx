@@ -3,10 +3,18 @@ export const Routes = ({
 }: {
   setVisibleLeft: (visible: boolean) => void
 }) => {
+
   const changesHome = (newHome: string) => {
     setVisibleLeft(false)
     window.location.hash = newHome
+    if (typeof window !== 'undefined') {
+      // Si necesitas redirigir a la raíz, puedes hacerlo así:
+      window.location.pathname = '/' // Navega a la página principal
+      // Redirige usando el hash de la URL
+      window.location.hash = newHome
+    }
   }
+
 
   const navLinks = [
     {

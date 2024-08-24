@@ -6,16 +6,27 @@ interface Moviesjurassic {
   }
 }
 
-export default async function moviesjurassic(props: Moviesjurassic) {
+export default async function Moviesjurassic(props: Moviesjurassic) {
   const { moviesjurassic } = props.params
 
   let { data: MovieJurassic, error } = await supabase
     .from('MovieJurassic')
     .select('*')
 
+  const decodedTitle = decodeURIComponent(moviesjurassic[0])
+
   const filterMoviesJurassic = MovieJurassic?.filter(
-    (data: any) => data.id == moviesjurassic,
+    (data: any) => data.title == decodedTitle,
   )
 
-  return <main></main>
+  console.log('url', moviesjurassic)
+  console.log('url cdo', decodedTitle)
+  console.log('url', MovieJurassic)
+  console.log('url', filterMoviesJurassic)
+  return (
+    <main>
+      {' '}
+      <p>hola {decodedTitle}</p>{' '}
+    </main>
+  )
 }

@@ -6,7 +6,7 @@ interface Character {
   }
 }
 
-export default async function character(props: Character) {
+export default async function Character(props: Character) {
   const { character } = props.params
 
   let { data: CharactersFranchise, error } = await supabase

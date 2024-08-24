@@ -35,7 +35,7 @@ export const Homepages = () => {
   }
   return (
     <>
-      <section className="relative pb-3 shadowb">
+      <section className="shadowb relative pb-3">
         <Videos key={home} newHome={home} />
         <article className="absolute bottom-[10%] left-2 grid justify-items-start gap-2 sm:max-w-[50%] lg:bottom-1/4">
           <h1 className="font-title text-4xl font-extrabold sm:text-5xl">
@@ -52,7 +52,7 @@ export const Homepages = () => {
           <button className="inline-flex pr-2">
             <Link
               className="font-base rounded-lg bg-gradient-to-r from-[#caa185] to-[#69abc2] px-2 py-1 font-text text-base sm:text-lg"
-              href={`/moviesjurassic/${home}`}
+              href={`/MoviesJurassic/${encodeURIComponent(titles[home])}`}
             >
               inf de la Pelicula {titles[home] || ''}
             </Link>

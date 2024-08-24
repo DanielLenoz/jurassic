@@ -97,11 +97,11 @@ export const InfiniteMovingCards = ({
                     quality={100}
                     className="rounded-2xl shadow-md shadow-segundary"
                   />
-                  <h3 className="absolute text-center top-[59%] font-title text-2xl font-semibold">
+                  <h3 className="absolute top-[59%] text-center font-title text-2xl font-semibold">
                     {item.Name}
                   </h3>
                 </article>
-                <p className="text-center font-text text-lg font-normal pt-3">
+                <p className="pt-3 text-center font-text text-lg font-normal">
                   <MDXRemote source={item.description} />
                 </p>
               </section>

@@ -11,6 +11,11 @@ html {
   overflow-x: hidden;
 }
 
-.shadow{
+.shadowb{
   mask-image: linear-gradient(black 80%, transparent)
+}
+.shadowt{
+  mask-image: linear-gradient( to bottom,
+    transparent,
+    black 10%)
 }

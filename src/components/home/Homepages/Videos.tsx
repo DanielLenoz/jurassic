@@ -10,7 +10,7 @@ export const Videos = ({ newHome }: { newHome: string }) => {
         preload="auto"
         muted
         loop
-        className="shadow sm:hidden"
+        className="shadowb sm:hidden"
       >
         <source src={`/videos/${newHome}M.mp4`} type="video/mp4" />
         <track
@@ -28,7 +28,7 @@ export const Videos = ({ newHome }: { newHome: string }) => {
         preload="auto"
         muted
         loop
-        className="hidden shadow sm:block"
+        className="hidden shadowb sm:block"
       >
         <source src={`/videos/${newHome}.mp4`} type="video/mp4" />
         <track

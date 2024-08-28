@@ -1,8 +1,9 @@
 import { supabase } from 'app/supabase/client'
 import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote/rsc'
-import './style.model.css'
 import { CharecterCards } from 'app/components/shared/CharecterCards'
+import { MoviesCards } from 'app/components/shared/MoviesCards'
+import './style.model.css'
 
 interface Moviesjurassic {
   params: {
@@ -46,6 +47,7 @@ export default async function Moviesjurassic(props: Moviesjurassic) {
         ))}
       </section>
       <CharecterCards />
+      <MoviesCards/>
     </main>
   )
 }

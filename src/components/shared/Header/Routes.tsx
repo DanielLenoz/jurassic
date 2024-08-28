@@ -22,16 +22,16 @@ export const Routes = ({
       text: 'Jurassic Park',
     },
     {
-      href: '#jurassicWork',
-      text: 'Jurassic Work',
+      href: '#jurassicWorld',
+      text: 'Jurassic World',
     },
     {
-      href: '#jurassicWork2',
-      text: 'Jurassic Work El reino caido',
+      href: '#jurassicWorld2',
+      text: 'Jurassic World El reino caido',
     },
     {
-      href: '#jurassicWork3',
-      text: 'Jurassic Work Dominion',
+      href: '#jurassicWorld3',
+      text: 'Jurassic World Dominion',
     },
   ]
   return (

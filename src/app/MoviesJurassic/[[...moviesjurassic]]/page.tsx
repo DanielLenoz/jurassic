@@ -1,4 +1,8 @@
 import { supabase } from 'app/supabase/client'
+import Image from 'next/image'
+import { MDXRemote } from 'next-mdx-remote/rsc'
+import './style.model.css'
+import { CharecterCards } from 'app/components/shared/CharecterCards'
 
 interface Moviesjurassic {
   params: {
@@ -19,14 +23,29 @@ export default async function Moviesjurassic(props: Moviesjurassic) {
     (data: any) => data.title == decodedTitle,
   )
 
-  console.log('url', moviesjurassic)
-  console.log('url cdo', decodedTitle)
-  console.log('url', MovieJurassic)
-  console.log('url', filterMoviesJurassic)
   return (
-    <main>
-      {' '}
-      <p>hola {decodedTitle}</p>{' '}
+    <main className="grid justify-items-center gap-3 px-2 md:px-32">
+      <section className="pt-10">
+        {filterMoviesJurassic?.map((data: any) => (
+          <>
+            <Image
+              src={data.img.full}
+              width={524}
+              height={761}
+              alt={data.title}
+              key={data.id}
+              className="float-left mr-1"
+            />
+            <h1 className="pb-1 font-title text-5xl font-semibold">
+              {data.title}
+            </h1>
+            <p className="gap-1 font-text text-lg font-normal">
+              <MDXRemote source={data.content} />
+            </p>
+          </>
+        ))}
+      </section>
+      <CharecterCards />
     </main>
   )
 }

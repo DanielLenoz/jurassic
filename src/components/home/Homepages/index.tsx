@@ -10,9 +10,9 @@ export const Homepages = () => {
     const getHashFromUrl = () => {
       if (typeof window !== 'undefined') {
         // Verifica si `window` está definido
-        return window.location.hash.substring(1) || 'jurassicWork3'
+        return window.location.hash.substring(1) || 'jurassicWorld3'
       }
-      return 'jurassicWork3' // Valor por defecto si no está en el navegador
+      return 'jurassicWold3' // Valor por defecto si no está en el navegador
     }
 
     setHome(getHashFromUrl())
@@ -28,9 +28,9 @@ export const Homepages = () => {
   }, [])
 
   const titles: { [key: string]: string } = {
-    jurassicWork3: 'Jurassic Work Dominion',
-    jurassicWork2: 'Jurassic Work El reino caido',
-    jurassicWork: 'Jurassic Work',
+    jurassicWorld3: 'Jurassic World Dominion',
+    jurassicWorld2: 'Jurassic World El reino caido',
+    jurassicWorld: 'Jurassic World',
     jurassicPark: 'Jurassic Park',
   }
   return (

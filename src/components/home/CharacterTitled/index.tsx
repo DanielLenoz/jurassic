@@ -13,9 +13,9 @@ export const CharacterTitled = () => {
     const getHashFromUrl = () => {
       if (typeof window !== 'undefined') {
         // Verifica si `window` está definido
-        return window.location.hash.substring(1) || 'jurassicWork3'
+        return window.location.hash.substring(1) || 'jurassicWorld3'
       }
-      return 'jurassicWork3' // Valor por defecto si no está en el navegador
+      return 'jurassicWorld3' // Valor por defecto si no está en el navegador
     }
 
     setHome(getHashFromUrl())
@@ -38,9 +38,9 @@ export const CharacterTitled = () => {
       .select('*')
     // Definir los títulos que corresponden a los diferentes valores de `home` con un objeto dinamico
     const titles: { [key: string]: string } = {
-      jurassicWork3: 'Lewis Dogson',
-      jurassicWork2: 'Benjamin Lockwood',
-      jurassicWork: 'Simon Masrani',
+      jurassicWorld3: 'Lewis Dogson',
+      jurassicWorld2: 'Benjamin Lockwood',
+      jurassicWorld: 'Simon Masrani',
       jurassicPark: 'John Hammond',
     }
     // Filtra los personajes obtenidos según el título asociado con `home`

@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { CharecterCards } from 'app/components/shared/CharecterCards'
 import { MoviesCards } from 'app/components/shared/MoviesCards'
-import './style.model.css'
 
 interface Moviesjurassic {
   params: {
@@ -40,14 +39,14 @@ export default async function Moviesjurassic(props: Moviesjurassic) {
             <h1 className="pb-1 font-title text-5xl font-semibold">
               {data.title}
             </h1>
-            <p className="gap-1 font-text text-lg font-normal">
+            <p className="text-linea-b gap-1 font-text text-lg font-normal">
               <MDXRemote source={data.content} />
             </p>
           </>
         ))}
       </section>
       <CharecterCards />
-      <MoviesCards/>
+      <MoviesCards />
     </main>
   )
 }

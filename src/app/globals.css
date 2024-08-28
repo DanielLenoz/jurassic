@@ -19,3 +19,7 @@ html {
     transparent,
     black 10%)
 }
+
+.text-linea-b > p{
+ padding-bottom: 16px;
+}

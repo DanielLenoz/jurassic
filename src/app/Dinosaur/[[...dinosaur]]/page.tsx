@@ -1,5 +1,4 @@
 import { supabase } from 'app/supabase/client'
-
 interface Dinosaur {
   params: {
     dinosaur: string[]
@@ -9,11 +8,17 @@ interface Dinosaur {
 export default async function Dinosaur(props: Dinosaur) {
   const { dinosaur } = props.params
 
-  let { data: Dinosaurios, error } = await supabase
-    .from('Dinosaurios')
-    .select('*')
+  let { data: Dinosaurs, error } = await supabase.from('Dinosaurs').select('*')
 
-  const filterDinosaur = Dinosaurios?.filter((data: any) => data.id == dinosaur)
+  const decodedTitle = decodeURIComponent(dinosaur[0])
 
-  return <main></main>
+  const filterDinosaur = Dinosaurs?.filter(
+    (data: any) => data.Name == decodedTitle,
+  )
+
+  return (
+    <main className="grid justify-items-center gap-3 px-2 md:px-32">
+      
+    </main>
+  )
 }

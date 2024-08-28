@@ -1,6 +1,4 @@
 import { supabase } from 'app/supabase/client'
-import Image from 'next/image'
-import { MDXRemote } from 'next-mdx-remote/rsc'
 import { CharecterCards } from 'app/components/shared/CharecterCards'
 import { MoviesCards } from 'app/components/shared/MoviesCards'
 import { MovieSection } from 'app/components/MovieSection'
@@ -27,6 +25,8 @@ export default async function Moviesjurassic(props: Moviesjurassic) {
   return (
     <main className="grid justify-items-center gap-3 px-2 md:px-32">
       <MovieSection filterMoviesJurassic={filterMoviesJurassic} />
+      <CharecterCards />
+      <MoviesCards />
     </main>
   )
 }

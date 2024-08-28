@@ -1,25 +1,23 @@
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Image from 'next/image'
-import { CharecterCards } from '../shared/CharecterCards'
-import { MoviesCards } from '../shared/MoviesCards'
 
-export const MovieSection = ({ filterMoviesJurassic }: any) => {
+export const CharacterSection = ({ filterCharactersFranchise }: any) => {
   return (
     <>
       <section className="pt-10">
-        {filterMoviesJurassic?.map((data: any) => (
+        {filterCharactersFranchise?.map((data: any) => (
           <>
             <Image
               src={data.img.full}
-              width={524}
-              height={761}
-              alt={data.title}
+              width={349}
+              height={598}
+              alt={data.Name}
               key={data.id}
               quality={100}
-              className="float-left mr-1"
+              className="float-left mr-1 rounded-2xl shadow-md shadow-segundary"
             />
             <h1 className="pb-1 font-title text-5xl font-semibold">
-              {data.title}
+              {data.Name}
             </h1>
             <p className="text-linea-b gap-1 font-text text-lg font-normal">
               <MDXRemote source={data.content} />

@@ -85,7 +85,7 @@ export const InfiniteMovingCards = ({
       >
         {items?.map((item) => (
           <>
-            <Link key={item.id} href={`/${item.Name}`}>
+            <Link key={item.id} href={`/Character/${item.Name}`}>
               <Image
                 src={item.img.full}
                 width={150}

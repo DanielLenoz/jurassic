@@ -22,11 +22,6 @@ export default async function Character(props: Character) {
     (data: any) => data.Name == decodedTitle,
   )
 
-  console.log('url', character)
-  console.log('url', decodedTitle)
-  console.log('data', CharactersFranchise)
-  console.log('data', filterCharactersFranchise)
-  
   return (
     <main className="grid justify-items-center gap-3 px-2 md:px-32">
       <CharacterSection filterCharactersFranchise={filterCharactersFranchise} />

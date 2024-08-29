@@ -86,7 +86,7 @@ export const InfiniteMovingCards = ({
       >
         {items?.map((item) => (
           <>
-            <Link key={item.id} href={`/${item.Name}`}>
+            <Link key={item.id} href={`/Dinosaur/${item.Name}`}>
               <section className="max-w-[315px] rounded-2xl bg-gradient-to-br from-[#255f72] to-[#062631] p-1">
                 <article className="relavite grid justify-items-center">
                   <Image

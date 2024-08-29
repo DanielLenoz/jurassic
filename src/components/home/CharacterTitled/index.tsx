@@ -66,8 +66,8 @@ export const CharacterTitled = () => {
           className="rounded-2xl shadow-2xl shadow-segundary"
         />
         <article className="grid max-w-[636px] gap-1">
-          <h2 className="font-title text-4xl font-semibold">{data.Name}</h2>
-          <article className="grid gap-1 font-text text-lg font-normal">
+          <h2 className="font-title text-3xl sm:text-4xl font-semibold">{data.Name}</h2>
+          <article className="grid gap-1 font-text text-base font-normal sm:text-lg">
             <MDXRemote source={data.content} />
           </article>
         </article>

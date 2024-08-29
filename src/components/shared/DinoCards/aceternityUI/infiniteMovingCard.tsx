@@ -79,7 +79,7 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          'flex w-max min-w-full shrink-0 flex-nowrap gap-2 py-4',
+          'flex w-max min-w-full shrink-0 flex-nowrap gap-2',
           start && 'animate-scroll',
           pauseOnHover && 'hover:[animation-play-state:paused]',
         )}
@@ -97,11 +97,11 @@ export const InfiniteMovingCards = ({
                     quality={100}
                     className="rounded-2xl shadow-md shadow-segundary"
                   />
-                  <h3 className="absolute top-[59%] text-center font-title text-2xl font-semibold">
+                  <h3 className="absolute top-[62%] text-center font-title text-2xl sm:top-[60%] sm:text-3xl">
                     {item.Name}
                   </h3>
                 </article>
-                <p className="pt-3 text-center font-text text-lg font-normal">
+                <p className="pt-3 text-center font-text text-base font-normal sm:text-lg">
                   <MDXRemote source={item.description} />
                 </p>
               </section>

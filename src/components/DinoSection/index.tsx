@@ -18,44 +18,54 @@ export const DinoSection = ({ filterDinosaur }: any) => {
                 className="mb-1 mr-1 rounded-2xl shadow-md shadow-segundary"
               />
               <section>
-                <h1 className="pb-1 font-title text-5xl font-semibold">
+                <h1 className="pb-1 font-title text-4xl font-semibold sm:text-5xl">
                   {data.Name}
                 </h1>
                 <article className="flex flex-wrap gap-2">
                   <article className="flex gap-1 rounded-lg border-2 border-segundary p-3">
-                    <h3 className="font-title text-xl">
+                    <h3 className="font-title text-lg sm:text-xl">
                       Altura:{' '}
-                      <span className="font-text text-lg">{data.height} </span>
+                      <span className="font-text text-base sm:text-lg">
+                        {data.height}{' '}
+                      </span>
                     </h3>
                   </article>
                   <article className="flex gap-1 rounded-lg border-2 border-segundary p-3">
-                    <h3 className="font-title text-xl">
+                    <h3 className="font-title text-lg sm:text-xl">
                       Peso:{' '}
-                      <span className="font-text text-lg">{data.weight}</span>
+                      <span className="font-text text-base sm:text-lg">
+                        {data.weight}
+                      </span>
                     </h3>
                   </article>
                   <article className="flex gap-1 rounded-lg border-2 border-segundary p-3">
-                    <h3 className="font-title text-xl">
+                    <h3 className="font-title text-lg sm:text-xl">
                       Periodo:{' '}
-                      <span className="font-text text-lg">{data.periodo}</span>
+                      <span className="font-text text-base sm:text-lg">
+                        {data.periodo}
+                      </span>
                     </h3>
                   </article>
                   <article className="flex gap-1 rounded-lg border-2 border-segundary p-3">
-                    <h3 className="font-title text-xl">
+                    <h3 className="font-title text-lg sm:text-xl">
                       Dieta:{' '}
-                      <span className="font-text text-lg">{data.diet}</span>{' '}
+                      <span className="font-text text-base sm:text-lg">
+                        {data.diet}
+                      </span>{' '}
                     </h3>
                   </article>
                   <article className="flex gap-1 rounded-lg border-2 border-segundary p-3">
-                    <h3 className="font-title text-xl">
+                    <h3 className="font-title text-lg sm:text-xl">
                       Habilidad de compate:{' '}
-                      <span className="font-text text-lg">{data.skills}</span>
+                      <span className="font-text text-base sm:text-lg">
+                        {data.skills}
+                      </span>
                     </h3>
                   </article>
                 </article>
               </section>
             </section>
-            <p className="text-linea-b gap-1 pt-2 font-text text-lg font-normal">
+            <p className="text-linea-b gap-1 pt-2 font-text text-base font-normal sm:text-lg">
               <MDXRemote source={data.content} />
             </p>
           </>

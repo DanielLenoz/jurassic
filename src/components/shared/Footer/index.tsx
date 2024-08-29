@@ -5,7 +5,7 @@ import { RiGithubFill, RiLinkedinFill } from 'react-icons/ri'
 
 export const Footer = () => {
   return (
-    <footer className="shadowt">
+    <footer className="shadowt pt-3">
       <Image
         src="/assets/images/img-footer-dino.webp"
         width={1440}

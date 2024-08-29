@@ -18,10 +18,10 @@ export const MovieSection = ({ filterMoviesJurassic }: any) => {
               quality={100}
               className="float-left mr-1"
             />
-            <h1 className="pb-1 font-title text-5xl font-semibold">
+            <h1 className="pb-1 font-title text-4xl sm:text-5xl font-semibold">
               {data.title}
             </h1>
-            <p className="text-linea-b gap-1 font-text text-lg font-normal">
+            <p className="text-linea-b gap-1 font-text text-base sm:text-lg font-normal">
               <MDXRemote source={data.content} />
             </p>
           </>

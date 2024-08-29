@@ -12,10 +12,10 @@ export const MapJurassic = () => {
         className="rounded-2xl shadow-lg shadow-segundary"
       />
       <article className="max-w-[550px]">
-        <h2 className="pb-2 font-title text-4xl font-semibold">
+        <h2 className="pb-2 font-title text-3xl font-semibold sm:text-4xl">
           La legendaria isla nublar
         </h2>
-        <p className="grid gap-2 font-text text-lg font-normal">
+        <p className="grid gap-2 font-text text-base sm:text-lg font-normal">
           Isla Nublar, situada a 120 millas de la costa de Costa Rica, es el
           escenario principal de Jurassic Park y Jurassic World. En 1993, John
           Hammond creó el parque temático Jurassic Park en esta isla, donde los

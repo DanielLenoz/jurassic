@@ -14,12 +14,12 @@ export const CharacterSection = ({ filterCharactersFranchise }: any) => {
               alt={data.Name}
               key={data.id}
               quality={100}
-              className="float-left mr-1 rounded-2xl shadow-md shadow-segundary"
+              className="float-left mr-1 mb-1 rounded-2xl shadow-md shadow-segundary"
             />
-            <h1 className="pb-1 font-title text-5xl font-semibold">
+            <h1 className="pb-1 font-title text-4xl sm:text-5xl font-semibold">
               {data.Name}
             </h1>
-            <p className="text-linea-b gap-1 font-text text-lg font-normal">
+            <p className="text-linea-b gap-1 font-text text-base sm:text-lg font-normal">
               <MDXRemote source={data.content} />
             </p>
           </>

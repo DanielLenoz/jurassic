@@ -47,7 +47,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [require('daisyui'), addVariablesForColors],
 }
 
 function addVariablesForColors({ addBase, theme }: any) {

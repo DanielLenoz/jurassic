@@ -1,6 +1,6 @@
 # Jurassic
 
-<img align="center" alt="Jurassic" width="100%" src="https://your-image-url-here.com">
+<img align="center" alt="Jurassic" width="100%" src="https://github.com/user-attachments/assets/3e04b92a-3731-47ad-b241-23ae0dd95930">
 
 ---
 
@@ -24,6 +24,7 @@
    - **Next.js**: Elegí Next.js por su capacidad para manejar rutas dinámicas y optimizar el rendimiento de la página.
    - **Supabase**: Desarrollé la API completa y gestioné la base de datos de la aplicación a través de Supabase.
    - **Tailwind CSS**: Se aplicó Tailwind CSS para estilizar los componentes de manera rápida y eficiente.
+   - **Otras Librerías y Comunidades**: Incorporé animaciones y elementos de diseño de la comunidad para mejorar la experiencia del usuario.
 
 4. **Ecosistema y Expansión**: Este proyecto no se limita a ser una simple página web; es una plataforma viva que evoluciona con el tiempo, incorporando nuevas funcionalidades y mejoras continuas inspiradas en las películas.
 

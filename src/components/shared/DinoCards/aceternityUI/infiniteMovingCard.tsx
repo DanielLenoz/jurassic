@@ -1,7 +1,6 @@
 'use client'
 
 import { cn } from 'app/outComponents/lib/utils'
-import { MDXRemote } from 'next-mdx-remote/rsc'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
@@ -102,7 +101,7 @@ export const InfiniteMovingCards = ({
                   </h3>
                 </article>
                 <p className="pt-3 text-center font-text text-base font-normal sm:text-lg">
-                  <MDXRemote source={item.description} />
+                  {item.description}
                 </p>
               </section>
             </Link>

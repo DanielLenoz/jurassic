@@ -1,6 +1,6 @@
 'use client'
 import { supabase } from 'app/supabase/client'
-import { MDXRemote } from 'next-mdx-remote/rsc'
+// import { MDXRemote } from 'next-mdx-remote/rsc'
 import Image from 'next/image'
 import { useEffect, useState, useCallback, useMemo } from 'react'
 
@@ -66,9 +66,11 @@ export const CharacterTitled = () => {
           className="rounded-2xl shadow-2xl shadow-segundary"
         />
         <article className="grid max-w-[636px] gap-1">
-          <h2 className="font-title text-3xl sm:text-4xl font-semibold">{data.Name}</h2>
+          <h2 className="font-title text-3xl font-semibold sm:text-4xl">
+            {data.Name}
+          </h2>
           <article className="grid gap-1 font-text text-base font-normal sm:text-lg">
-            <MDXRemote source={data.content} />
+            <DynamicMDXRemote source={data.content} />
           </article>
         </article>
       </>
@@ -76,4 +78,21 @@ export const CharacterTitled = () => {
   }, [characters])
 
   return <section className="grid gap-2 lg:flex">{renderedCharacters}</section>
+}
+
+const DynamicMDXRemote = async ({ source }: { source: string }) => {
+  const [MDXRemoteComponent, setMDXRemoteComponent] = useState<any>(null)
+
+  useEffect(() => {
+    const loadMDXRemote = async () => {
+      const { MDXRemote } = await import('next-mdx-remote/rsc')
+      setMDXRemoteComponent(() => MDXRemote)
+    }
+
+    loadMDXRemote()
+  }, [])
+
+  if (!MDXRemoteComponent) return null
+
+  return <MDXRemoteComponent source={source} />
 }

@@ -1,7 +1,5 @@
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Image from 'next/image'
-import { CharecterCards } from '../shared/CharecterCards'
-import { MoviesCards } from '../shared/MoviesCards'
 
 export const MovieSection = ({ filterMoviesJurassic }: any) => {
   return (

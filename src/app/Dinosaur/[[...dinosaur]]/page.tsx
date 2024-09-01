@@ -10,11 +10,13 @@ interface Dinosaur {
 export default async function Dinosaur(props: Dinosaur) {
   const { dinosaur } = props.params
 
-  let { data: Dinosaurs, error } = await supabase.from('Dinosaurs').select('*')
+  let { data: Dinosaurios, error } = await supabase
+    .from('Dinosaurios')
+    .select('*')
 
   const decodedTitle = decodeURIComponent(dinosaur[0])
 
-  const filterDinosaur = Dinosaurs?.filter(
+  const filterDinosaur = Dinosaurios?.filter(
     (data: any) => data.Name == decodedTitle,
   )
 

@@ -52,7 +52,7 @@ Si deseas colaborar en el proyecto o tienes sugerencias, no dudes en **contactar
 ## Autor
 
 - Daniel Steven Rodriguez Verano
-- Sitio web: [TuSitioWeb](https://tu-sitio-web.com)
+- Sitio web: [jurassic](https://jurassic-nine.vercel.app/#jurassicWorld3)
 - Contacto sugerido: [LinkedIn](https://www.linkedin.com/in/tu-perfil/)
 
 ## Licencia
